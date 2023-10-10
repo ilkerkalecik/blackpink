@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Young+Serif&display=swap');
+body{
+	overflow-x: hidden;
+    font-family: 'GFS Didot', serif;
+font-family: 'Young Serif', serif;
+}
+
+:root{
+	--color-1:#f78da7; 
+    --color-2:rgb(255, 255, 255);
+    --color-3:rgb(0, 0, 0);
+	--color-4:#ffd1dc;
+	--color-5:#f2adbe;
+	--d: 700ms;
+    --e: cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+
+.border-5{
+	border-radius: 3%;
+border-color: var(--color-1) !important;
+}
+
+#background-image {
+    
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.nav-link{
+    color: var(--color-1);
+}
+.nav-link:focus{
+	color: white;
+}
+.style-2 {
+	position: relative;
+	transition: color .3s ease-in-out;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 85%;
+		height: 3px;
+		background-color: var(--color-2);
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+	}
+	
+	&:hover {
+		color: var(--color-2);
+	}
+	
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+.style-3 {
+	position: relative;
+	transition: color .3s ease-in-out;
+    color: rgb(0, 0, 0);
+	
+	&::before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		width: 85%;
+		height: 3px;
+		background-color: var(--color-3);
+		transform: scaleX(0);
+		transition: transform .3s ease-in-out;
+        
+	}
+	
+	&:hover {
+		color: var(--color-3);
+	}
+	
+	&:hover::before {
+		transform: scaleX(1);
+	}	
+}
+
+#home>a{
+	margin-top:280px;
+}
+.btn-primary {
+    background-color: var(--color-1)!important;
+	border: none;
+	cursor: pointer !important;
+}
+.cursor-pointer{
+	cursor: pointer !important;
+  }
+
+.jennie{
+	background-position: 19% 75%;
+	height: 120vh;
+	background-image: url(images/jennie.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.rose{
+	background-position: 27% 75%;
+
+	height: 120vh;
+	background-image: url(images/rose.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.lisa{
+	background-position: 37% 75%;
+
+	height: 120vh;
+	background-image: url(images/lisa.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.jisoo{
+	background-position:15% 75%;
+	height: 120vh;
+	background-image: url(images/jisoo.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.card{
+	
+	background:none;
+	border: var(--color-1);
+}
+#store>.row>.col-12>.card>img{
+	filter: drop-shadow(14px 10px 5px var(--color-1));
+}
+
+.banner-image {
+
+	background-position: center;
+	background-size: cover;
+	height: 300px;
+	width: 100%;
+	border-radius: 12px;
+	border: 1px solid rgba(255,255,255, 0.255)
+  }
+  .outline {
+	background: transparent;
+	color: var(--color-1);
+	border: 1px solid var(--color-1);
+	transition: all .3s ease;
+	
+  }
+  
+  .outline:hover{
+	transform: scale(1.125);
+	color: rgba(255, 255, 255, 0.9);
+	border-color: rgba(255, 255, 255, 0.9);
+	transition: all .3s ease;  
+  }
+  
+  .fill {
+	background: var(--color-1);
+	color: rgba(255,255,255,0.95);
+	filter: drop-shadow(0);
+	font-weight: bold;
+	transition: all .3s ease; 
+  }
+  
+  .fill:hover{
+	transform: scale(1);  
+	border-color: rgba(255, 255, 255, 0.9);
+	filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+	transition: all .3s ease;    
+  }  
+
+  .conteiner-music-card{
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color: var(--color-1);
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.125);  
+	padding: 38px;  
+	filter: drop-shadow(0 0px 10px var(--color-1));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	text-align: center;
+	
+  }
+  .conteiner-music-card:hover{
+	transition: var(--d);
+	backdrop-filter: blur(16px) saturate(180%);
+	-webkit-backdrop-filter: blur(16px) saturate(180%);
+	background-color:var(--color-5) ;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.345);  
+	padding: 38px;  
+	filter: drop-shadow(0 0px 10px var(--color-1));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content:center;
+	text-align: center;
+	
+  }
+  .music-1{
+	background-image: url(images/bornpinkalbume.jpg);
+  }
+  .music-2{
+	background-image:url(images/albume2.jpg);
+  }
+  .music-3{
+	background-image: url(images/albume3.jpg);
+  }
+  .music-4{
+	background-image: url(images/albume4.png);
+  }
+
+  .animatable {
+  
+	/* initially hide animatable objects */
+	visibility: hidden;
+	
+	/* initially pause animatable objects their animations */
+	-webkit-animation-play-state: paused;   
+	-moz-animation-play-state: paused;     
+	-ms-animation-play-state: paused;
+	-o-animation-play-state: paused;   
+	animation-play-state: paused; 
+  }
+  
+  /* show objects being animated */
+  .animated {
+	visibility: visible;
+	
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+  
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-ms-animation-play-state: running;
+	-o-animation-play-state: running;
+	animation-play-state: running;
+  }
+  
+  #musicbackgroundvideo {
+	-webkit-box-shadow: -1px -200px 64px 60px rgb(109, 36, 59);
+	-moz-box-shadow: -1px -200px 64px 60px rgb(112, 40, 63);
+	box-shadow: -1px -200px 64px 60px rgb(84, 26, 44);
+	width: 100%;
+	margin:  0 !important;
+	background: url("videos/music-background-video.mp4")center;
+	background-size: cover;
+	 }
+	#myVideo {
+		margin: 0 !important;
+		width: 100vw;
+		
+		background: url("videos/music-background-video.mp4")center;
+		background-size: cover;
+		  }
+.table>thead>tr>th{
+	text-align: center;
+	color: var(--color-1);
+	background-color: black;
+}
+
+.table>tbody>tr>td{
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--color-1);
+	background-color: black;
+}
+.table{
+	border: var(--color-1);
+}
+
+.tourlist{
+	justify-content: center;
+	align-items:center !important ;
+	background-color:black ;
+	color: white;
+}
+.pinkcolor{
+	color: var(--color-1);
+}
+.tourlist>div{
+	align-items:center !important ;
+	height:10vh;
+}
+@media only screen and (min-width: 600px) {
+	.tourconteiner{
+		margin-left: 28%;
+		margin-right: 28%
+	}
+  }
+
+  @media only screen and (min-width: 1000px) {
+	.tourconteiner{
+		margin-left: 33%;
+		margin-right: 33%
+	}
+  }
+  .tourconteiner{
+	background-color: black;
+  }
+  .tourheader{
+	color: var(--color-1);
+
+  }
